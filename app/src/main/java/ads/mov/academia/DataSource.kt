@@ -19,7 +19,7 @@ object DataSource {
             10,
             45,
             "Superior",
-            R.drawable.flexao_de_bracos
+            R.drawable.flexao_braco
         ),
         Exercicio(
             "Prancha",
@@ -46,7 +46,7 @@ object DataSource {
             1,
             900,
             "Cardio",
-            R.drawable.esteiraa
+            R.drawable.esteira
         )
     )
 }
