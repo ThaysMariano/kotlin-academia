@@ -1,8 +1,12 @@
+package ads.mov.academia
 
 import ads.mov.academia.Detalhes
 import ads.mov.academia.Exercicio
 import ads.mov.academia.PaginaInicial
 import ads.mov.academia.ui.theme.AcademiaTheme
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.remember
@@ -11,6 +15,20 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        setContent {
+            AcademiaTheme {
+                App()
+            }
+        }
+    }
+}
+
+
 
 @Composable
 fun App() {

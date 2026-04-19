@@ -6,14 +6,12 @@ plugins {
 
 android {
     namespace = "ads.mov.academia"
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "ads.mov.academia"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
